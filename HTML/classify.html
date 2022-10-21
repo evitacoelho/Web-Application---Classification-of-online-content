@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Classify form</title>
+        <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="CSS/classify.css">
+    </head>
+    <body>
+        <text class="heading">
+                Welcome < username>
+        </text>
+        <br>
+        <div class="container">
+            <div class="menu">
+                <input class="menubutton" type="button" value="CLASSIFY">
+                <br>
+                <input class="menubutton" type="button" value="LOCATION">
+                <br>
+                <input class="menubutton" type="button" value="ABOUT">
+                <br>
+            </div>
+            <div class="classifier">
+                <form autocomplete="off" id="classify">
+                    <text class="labels">
+                    ENTER TEXT FOR CLASSIFICATION BELOW
+                    </text>
+                    <br>
+                     <input class="input" type="text" id="inputbox" placeholder="Enter text here">
+                    <br>
+                    <input class="button" type="submit" value="CLASSIFY">
+                    <br>
+                    <text class="labels">
+                        OUTPUT OF CLASSIFICATION:
+                    </text>
+                    <br>
+                    <output name="result"></output>
+                </form>
+            </div>
+            <div class="feedback">
+                <form autocomplete="off" id="feedback">
+                    <text class="labels">
+                        PROVIDE FEEDBACK ON THE CLASSIFIER
+                    </text>
+                    <br>
+                    <input type="radio" id="correct" value="Classification is correct">
+                    <label for="correct">Classification is correct</label>
+                    <br>
+                    <input type="radio" id="incorrect" value="Classification is incorrect">
+                    <label for="incorrect">Classification is incorrect</label>
+                    <br>
+                    <input type="radio" id="others" value="Others">
+                    <label for="others">
+                        Others
+                        <input type="text" placeholder="Specify">
+                    </label>
+                    <br>
+                    <input class="button" type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

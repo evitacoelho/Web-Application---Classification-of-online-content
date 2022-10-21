@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up form</title>
+        <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="CSS/signUp.css">
+    </head>
+    <body>
+        <div class="signUp">
+            <h1 class="heading">Sign up</h1>
+            <form autocomplete="off" id="signUpForm">
+                <label>
+                    <span>First Name</span>
+                    <input class="field" type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                </label>
+                <label>
+                    <span>Last Name</span>
+                    <input class="field" type="text" name="lname" placeholder="Enter your last name" id="lname" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input class="field" type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                </label>
+                <label>
+                    <span>Phone Number</span>
+                    <input class="field" type="number" name="phone" id="phone" placeholder="Enter a valid phone number" required>
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input class="field" type="password" name="pass" id="pass" placeholder="Enter password" required>
+                </label>
+                <label>
+                    <span>Confirm Password</span>
+                    <input class="field" type="password" name="confirm" id="confirm" placeholder="Re-enter password" required>
+                </label>
+                <input class="button" type="submit" value="Create Account">
+                <text class="footer">
+                    Already registered? <a href="#"> Sign In </a>
+                </text>
+            </form>
+        </div>
+    </body>
+</html>
+

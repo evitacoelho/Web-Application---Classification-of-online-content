@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>start form</title>
+        <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="CSS/start.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="signin">
+                <text class="heading">Welcome back</text><br>
+                <text class="tagline">Sign in to continue to your account</text>
+                <form autocomplete="off" id ="signin" >
+                    <label class="labels">EMAIL<br>
+                        <input class="input" type="text" id="uname" name="uname" placeholder="Enter your email"
+                               pattern="^.+@.+\.[^.]+$" title="Input a valid email address" required>
+                    </label>
+                    <br>
+                    <label class="labels">PASSWORD<br>
+                        <input class="input" type="text" id="pass" name="pass" placeholder="Enter your password"
+                               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                               title="Input 8 or more characters, at least one each of uppercase, lowercase, numbers, and @$!%*?&"
+                               required>
+                    </label>
+                    <br>
+                    <label class ="checkbox"><input type="checkbox">
+                        Remember me
+                    </label>
+                    <br>
+                    <input class="button" type="submit" value="SIGN IN" style="color:black"><br>
+                    <text class="footer">Forgotten your password? <a href="#">Get help</a> signing in</text>
+                </form>
+            </div>
+            <div class="signup">
+                <text class="heading signupChildMargin" style="position: relative">
+                    New User?
+                </text>
+                <text  class="tagline signupChildMargin" style="position: relative">
+                    Click below to register for free
+                </text>
+                <form autocomplete="off" id ="signup" style="position: relative; line-height:6">
+                    <input class="button signupChildMargin"  type="submit" value="REGISTER">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

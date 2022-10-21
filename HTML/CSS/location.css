@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: url('./Images/background.svg');
+    background-size: cover;
+    padding: 5%;
+    height: 100%;
+    overflow:hidden;
+    font-family: Mulish, sans-serif;
+}
+.container {
+    display: flex;
+    background-color:white;
+    padding: 3%;
+    height: 60%;
+}
+.menu {
+    flex-direction: column;
+    padding:3%;
+    height: 80%;
+    width: 20%;
+    background-color: #EBE8FC;
+}
+.heading {
+    font-size: x-large;
+    line-height:1;
+    font-weight: 900;
+}
+.button {
+    font-size:small;
+    font-weight: 600;
+    height:50px;
+    width:80%;
+    border:none;
+    background: linear-gradient(45deg,#9969C7,#A3A3FF);
+    border-radius: 25px;
+    color:white;
+    margin: 10%;
+}
+.labels {
+    font-size: small;
+    line-height:2.5;
+    font-weight: 600;
+}
+.classifier {
+    flex-direction: column;
+    padding:3%;
+    height: 80%;
+    width: 40%;
+    background-color: #B19CD7;
+
+}
+.feedback{
+    flex-direction: column;
+    padding:3%;
+    height: 80%;
+    width: 30%;
+    background-color: #EBE8FC;
+
+}
+.input {
+    line-height:5;
+    font-size:small;
+    width:100%;
+    overflow:scroll;
+}
